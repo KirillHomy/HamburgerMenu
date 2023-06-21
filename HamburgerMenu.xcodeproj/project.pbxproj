@@ -13,6 +13,10 @@
 		7F8DC9152A420A0800C868FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F8DC9132A420A0800C868FF /* Main.storyboard */; };
 		7F8DC9172A420A0A00C868FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F8DC9162A420A0A00C868FF /* Assets.xcassets */; };
 		7F8DC91A2A420A0A00C868FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F8DC9182A420A0A00C868FF /* LaunchScreen.storyboard */; };
+		7F8DC9222A420BF800C868FF /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DC9212A420BF800C868FF /* HamburgerViewController.swift */; };
+		7F8DC9252A42191600C868FF /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DC9242A42191600C868FF /* UIView+Ext.swift */; };
+		7FD117992A4354AB002B6660 /* Rectangel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD117982A4354AB002B6660 /* Rectangel.swift */; };
+		7FD1179B2A4354C5002B6660 /* BurgerMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1179A2A4354C5002B6660 /* BurgerMenuButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		7F8DC9162A420A0A00C868FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F8DC9192A420A0A00C868FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F8DC91B2A420A0A00C868FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F8DC9212A420BF800C868FF /* HamburgerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerViewController.swift; sourceTree = "<group>"; };
+		7F8DC9242A42191600C868FF /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		7FD117982A4354AB002B6660 /* Rectangel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangel.swift; sourceTree = "<group>"; };
+		7FD1179A2A4354C5002B6660 /* BurgerMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerMenuButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F0E7A432A4359C000457A4B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7F8DC90D2A420A0800C868FF /* AppDelegate.swift */,
+				7F8DC90F2A420A0800C868FF /* SceneDelegate.swift */,
+				7F8DC9162A420A0A00C868FF /* Assets.xcassets */,
+				7F8DC9182A420A0A00C868FF /* LaunchScreen.storyboard */,
+				7F8DC91B2A420A0A00C868FF /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		7F0E7A442A435A1900457A4B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7F8DC9112A420A0800C868FF /* ViewController.swift */,
+				7F8DC9132A420A0800C868FF /* Main.storyboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		7F8DC9012A420A0800C868FF = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +85,30 @@
 		7F8DC90C2A420A0800C868FF /* HamburgerMenu */ = {
 			isa = PBXGroup;
 			children = (
-				7F8DC90D2A420A0800C868FF /* AppDelegate.swift */,
-				7F8DC90F2A420A0800C868FF /* SceneDelegate.swift */,
-				7F8DC9112A420A0800C868FF /* ViewController.swift */,
-				7F8DC9132A420A0800C868FF /* Main.storyboard */,
-				7F8DC9162A420A0A00C868FF /* Assets.xcassets */,
-				7F8DC9182A420A0A00C868FF /* LaunchScreen.storyboard */,
-				7F8DC91B2A420A0A00C868FF /* Info.plist */,
+				7F0E7A432A4359C000457A4B /* Application */,
+				7F8DC9232A4218FA00C868FF /* Extension */,
+				7FD117972A435494002B6660 /* Views */,
+				7F0E7A442A435A1900457A4B /* Controllers */,
 			);
 			path = HamburgerMenu;
+			sourceTree = "<group>";
+		};
+		7F8DC9232A4218FA00C868FF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7F8DC9242A42191600C868FF /* UIView+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7FD117972A435494002B6660 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F8DC9212A420BF800C868FF /* HamburgerViewController.swift */,
+				7FD117982A4354AB002B6660 /* Rectangel.swift */,
+				7FD1179A2A4354C5002B6660 /* BurgerMenuButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F8DC9222A420BF800C868FF /* HamburgerViewController.swift in Sources */,
+				7FD1179B2A4354C5002B6660 /* BurgerMenuButton.swift in Sources */,
 				7F8DC9122A420A0800C868FF /* ViewController.swift in Sources */,
+				7F8DC9252A42191600C868FF /* UIView+Ext.swift in Sources */,
 				7F8DC90E2A420A0800C868FF /* AppDelegate.swift in Sources */,
 				7F8DC9102A420A0800C868FF /* SceneDelegate.swift in Sources */,
+				7FD117992A4354AB002B6660 /* Rectangel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CSS48FCS24;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HamburgerMenu/Info.plist;
+				INFOPLIST_FILE = HamburgerMenu/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CSS48FCS24;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HamburgerMenu/Info.plist;
+				INFOPLIST_FILE = HamburgerMenu/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
